@@ -1,27 +1,39 @@
-# This is the repository for the CPUQ research project: Categorical Prompt Uncertainty Quantification
+# CPUQ: Categorical Prompt Uncertainty Quantification
+
+## Overview
+This repository contains the implementation of the CPUQ research project, focusing on Categorical Prompt Uncertainty Quantification.
 
 ## Setup
-- Git Clone this repository into a folder called CPUQ
-- Create conda/pyenv environment using the requirements.txt file
-- Follow instructions in the Data section below to download the exact dataset used 
+1. Clone the repository:   ```bash
+   git clone <repository-url> CPUQ   ```
+2. Create a conda/pyenv environment using the provided requirements:   ```bash
+   conda create -n cpuq -f requirements.txt   ```
+3. Download and prepare the dataset (see [Data Section](#data))
 
-## How To Use
-- Examples of how to key functions can be found in the example_scripts folder
+## Usage
+Example scripts demonstrating key functionalities can be found in the `example_scripts/` directory.
 
-## Data 
-### Data Download
-- Downaload the file at the following link: https://drive.google.com/file/d/14sIiCiT8ZPtvEI1DG8rGiMfZznxlYrt_/view?usp=sharing
-- It is a tar.gz file so extract it into the repository and merge it with the /data folder in the repository
+## Data
+### Dataset Download Instructions
+1. Download the dataset from [Google Drive](https://drive.google.com/file/d/14sIiCiT8ZPtvEI1DG8rGiMfZznxlYrt_/view?usp=sharing)
+2. Extract the downloaded `tar.gz` file
+3. Merge the extracted contents with the `/data` folder in the repository
 
 ## Experiments
 
-#### Probabilistic Prediction for Whether A Budget Item Affects an Socio-Economic Indicator
-- bash example_scripts/predict_budgetitem_to_indicator.sh GPU_IDS
-- GPU_IDS is a comma separated list of GPU IDs to use for the prediction
+### Probabilistic Budget Impact Prediction
+Predict whether a budget item affects a socio-economic indicator:
 
-#### Probabilistic Prediction for Whether A Socio-Economic Indicator Affects Another Socio-Economic Indicator
-- bash example_scripts/predict_indicator_to_indicator.sh GPU_IDS
-- GPU_IDS is a comma separated list of GPU IDs to use for the prediction
+bash example_scripts/predict_budgetitem_to_indicator.sh <GPU_IDS>
 
-## Analysis of results
-- See 
+
+### Probabilistic Indicator Relationship Prediction
+Predict whether a socio-economic indicator affects another indicator:
+
+bash example_scripts/predict_indicator_to_indicator.sh <GPU_IDS>
+
+Note: `GPU_IDS` should be a comma-separated list of GPU IDs to use for prediction.
+
+## Results Analysis
+Detailed analysis of results can be found in:
+- `prompt_engineering/analysis/analyses.ipynb`

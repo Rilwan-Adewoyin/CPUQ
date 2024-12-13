@@ -21,7 +21,7 @@ __pycache__/
 tests/env_vars.yml
 
 # Analysis files
-prompt_engineering/analysis/
+prompt_engineering/analysis/*
 !/prompt_engineering/analysis/analyses.ipynb
 
 # Scripts and Analysis
