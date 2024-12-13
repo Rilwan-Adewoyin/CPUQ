@@ -1,0 +1,62 @@
+# Folders
+research_papers
+ckpt
+prompt_engineering/output
+agent_based_modelling/output
+
+# Archives
+**/archive
+agent_based_modelling/archive
+
+# Python files
+__pycache__/
+**.pytest_cache/
+**.ipynb
+
+# Debugging Files
+**/**debug*
+**/finetune_debug.ipynb
+
+# Environment variables
+tests/env_vars.yml
+
+# Analysis files
+prompt_engineering/analysis/
+!/prompt_engineering/analysis/analyses.ipynb
+
+# Scripts and Analysis
+scripts/
+agent_based_modelling/analysis
+
+# Temporary Files
+**/*.temp
+temp*
+*temp*
+
+# Bash scripts
+**/*.sh
+
+# Logs
+**/*.log
+logging/
+
+# Data and Document files
+**/*.txt
+**/*.csv
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.html
+**/*.pdf
+**/*.yml
+**/*.yaml
+**/*.json
+**/*.parquet
+**/*.arrow
+**/*.pkl
+**/*.yaml
+
+# VSCode settings
+**/*.workspace
+**/*.code-workspace
+.vscode/
